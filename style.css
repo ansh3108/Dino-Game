@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #70c5ce; /* Set your desired background color */
+    overflow: hidden;
+}
+
+.gameContainer {
+    background-image: url('bg.png'); /* Replace with your background image */
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Ensure relative positioning for absolute child elements */
+}
+
+.dino {
+    background-image: url('dino.png'); /* Replace with your dinosaur image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 233px; /* Adjust size as per your image */
+    height: 114px; /* Adjust size as per your image */
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+
+.obstacle {
+    width: 166px; /* Adjust size as per your obstacle image */
+    height: 113px; /* Adjust size as per your obstacle image */
+    background-image: url('dragon.png'); /* Replace with your obstacle image */
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+
+.gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-align: center;
+    display: none; /* Hide initially */
+}
+
+#scoreCont {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
